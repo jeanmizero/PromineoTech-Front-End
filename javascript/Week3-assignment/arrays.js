@@ -1,4 +1,4 @@
-// 1. Create an array
+//1. Create an array
 let ages = [3,9,23,64,2,8,28,93];
 // a) Subtract first element
 let subtractElement = ages.splice(0,1);
@@ -65,22 +65,19 @@ function createFullName (firstName, lastName){
     console.log(firstName + " " + lastName);
 }
 createFullName("John", "Doe");
-
-
-// 9.Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100
-function sumArray(arrays){
-    
-    let summation = 0;
-    for (let i = 0; i < array.length; i++){
-        if(summation > 0){
-            return true;
-        }else{
-            return false;
-        }
-    }
+// //9.Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100
+function sumArray(array){
+    return array.reduce(function(sum, value) {
+        return sum + value;
+    }, 0);
 }
-console.log(sumArray[20,40,10,15,50]);
-
+console.log(sumArray([20,40,10,15,50]));
+let newSumArray = sumArray;
+if(newSumArray > 100){
+//    return true;
+}else{
+    return false;
+}
 // 10. Write a function that takes an array of numbers and returns the average of all the elements in the the array
 function findAverage(array){
     let average = 0;
@@ -93,26 +90,24 @@ function findAverage(array){
 }
 console.log(findAverage([2,4,6,8,10]));
 //11. Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array
-
 function getAverage(array1,array2){
-    let average1 = 0;
-    let average2  =0;
-    for(let i = 0; i < array1.length && array2.length; i++){
-        let currentValue1 = array1[i];
-        average += currentValue1;
-        let currentValue2 = array2[i];
-        average += currentValue2;
+    let average1,average2 = 0;
+    for(let i,j= 0,; i < array1.length,i < array2.length ; i,j++){
+        let currentValue = array[i,j]
+        average1 += currentValue;
+        average2 += currentValue
     }
-    average1 = average1 / array1.length
-    average2 = average2 / array2.length
-    return average1,average2;  
-    // if(average1 > average2){
-    //     return true;
-    // }else{
-    //     return false;
-    // }
+    average1 = average1 / array.length
+    average2 = average2 / array.length
+    return average1,average2;   
 }
-//console.log(average1[5,10,15,20,25,35]);
+console.log([4,6,10,20],[1,2,3,4]);
+let newGetAverage = getAverage;
+if (average1>average2){
+    return true;
+}else{
+    return false;
+}
 // 12. Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50
 function willBuyDrink(isHotOutside, moneyInPocket){
     if(isHotOutside && moneyInPocket > 10.50){
