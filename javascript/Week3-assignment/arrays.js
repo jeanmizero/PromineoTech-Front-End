@@ -65,19 +65,17 @@ function createFullName (firstName, lastName){
     console.log(firstName + " " + lastName);
 }
 createFullName("John", "Doe");
-// //9.Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100
-function sumArray(array){
-    return array.reduce(function(sum, value) {
+
+//9.Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100
+let numbers = [20,40,10,15,50];
+function compareSumOfArray(array){
+    let sumOfArray = numbers.reduce(function(sum, value) {
         return sum + value;
     }, 0);
+    console.log(sumOfArray >100);
 }
-console.log(sumArray([20,40,10,15,50]));
-let newSumArray = sumArray;
-if(newSumArray > 100){
-//    return true;
-}else{
-    return false;
-}
+compareSumOfArray(numbers);
+
 // 10. Write a function that takes an array of numbers and returns the average of all the elements in the the array
 function findAverage(array){
     let average = 0;
@@ -90,24 +88,20 @@ function findAverage(array){
 }
 console.log(findAverage([2,4,6,8,10]));
 //11. Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array
-function getAverage(array1,array2){
-    let average1,average2 = 0;
-    for(let i,j= 0,; i < array1.length,i < array2.length ; i,j++){
-        let currentValue = array[i,j]
-        average1 += currentValue;
-        average2 += currentValue
-    }
-    average1 = average1 / array.length
-    average2 = average2 / array.length
-    return average1,average2;   
+let arraysOfNumber = [1,2,3,4];
+function compareAverages(array1,array2){
+    let sumOfArray1 = numbers.reduce(function(sum, value) {
+        return sum + value;
+    }, 0);
+    let averageArray1 = sumOfArray1 / numbers.length;
+
+    let sumOfArray2 = arraysOfNumber.reduce(function(sum, value) {
+        return sum + value;
+    }, 0);
+    let averageArray2 = sumOfArray2 / numbers.length;
+    console.log(averageArray1 > averageArray2);   
 }
-console.log([4,6,10,20],[1,2,3,4]);
-let newGetAverage = getAverage;
-if (average1>average2){
-    return true;
-}else{
-    return false;
-}
+compareAverages(numbers, arraysOfNumber);
 // 12. Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50
 function willBuyDrink(isHotOutside, moneyInPocket){
     if(isHotOutside && moneyInPocket > 10.50){
