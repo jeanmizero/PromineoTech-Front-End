@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+hr{width: 90%;
+    margin: auto;
+    color: grey;
+}
+.container {
+    margin : 50px auto;
+    display: flex;
+    width: 90%;
+}
+aside,main section {
+    background-color : white;
+    border: 1px solid grey;
+    margin-right: 15px;
+    flex: 30%;
+}
+main {
+    flex: 70%;
+}
+.personal-image {
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    margin: 10px 10px ;
+}
+.person-name {
+    color: grey;
+    font-size: 3em;
+    margin: 5px;
+
+}
+.person-detail, .skills-list {
+    font-size: 1.2vw;
+    padding: 25px;
+    list-style: none;
+    color:#6AC47E;
+}
+.person-detail li {
+    margin: 15px 0;
+}
+.person-detail li i {
+    margin: 0 10px;
+}
+.head-section {
+    color:#6AC47E;
+    padding: 30px;
+    margin: 0 ;
+    font-size: 2.9em;
+}
+skills-list {
+    margin: 15px 0;
+
+}
+.progress-back {
+    border: 1px solid grey;
+    border-radius: 15px;
+    height: 1.5em;
+    margin-top: 15px;
+    text-align: center;
+}
+.progress {
+    height: 100%;
+    border-radius: 15px;
+    background-color:#6AC47E;
+
+}
+.p-100 {width: 100% }
+.p-90 {width: 90% }
+.p-85 {width: 85% }
+.p-80 {width: 80% }
+.p-80 {width: 80% }
+.p-75 {width: 75% }
+
+.progress h4 {
+    color: white;
+
+}
+.head-section {
+    color: #6AC47E;
+}
+.data-details {
+    width: 90%;
+    margin:auto;
+    padding: 40px 0;
+}
+.data-details h3 {
+    color: #6AC47E;
+    font-size: 1.2em;
+    margin: 10px 0;
+    padding: 0 20px
+}
+.data-details > span {
+    color: #6AC47E;
+    margin: 15px;
+    letter-spacing: 1px;
+    font-weight: bold;
+
+}
+green-span {
+    background-color:#6AC47E;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: normal;
+
+}
+.data-details p {
+    color: black;
+    margin: 10px 0;
+    letter-spacing: .5px;
+    line-height: 1.6;
+}
+#first-section {
+    margin-bottom:50px;
+}
+footer {
+    margin-top: 60px;
+    width: 100%;
+    background-color: #6AC47E;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    font-weight: bold;
+    line-height: 2;
+    
+}
+footer a {
+    color: white;
+    font-size: 1.6em;
+}
